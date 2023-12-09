@@ -39,8 +39,8 @@ const CardTitle = React.forwardRef<
       "text-2xl font-semibold leading-none tracking-tight",
       className
     )}
-    {...props}
-  />
+    {...props}>
+    </h3>
 ))
 CardTitle.displayName = "CardTitle"
 

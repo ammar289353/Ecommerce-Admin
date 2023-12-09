@@ -4,7 +4,4 @@ module.exports = {
       "res.cloudinary.com"
     ],
   },
-  experimental: {
-    outputEsmodules: true, 
-  },
 };
