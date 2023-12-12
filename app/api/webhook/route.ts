@@ -12,6 +12,10 @@ export async function POST(req: Request) {
   let event: Stripe.Event
 
   try {
+    console.log('Webhook body:', body);
+    console.log('Webhook signature:', signature);
+    console.log('Webhook secret:', process.env.STRIPE_WEBHOOK_SECRET);
+
     event = stripe.webhooks.constructEvent(
       body,
       signature,
