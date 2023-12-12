@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     address?.country
   ];
 
-  const addressString = addressComponents.filter((c) => c !== null).join(', ');
+  const addressString = addressComponents.filter((c) => c !== null && c !== undefined).join(', ');
 
 
   if (event.type === "checkout.session.completed") {
